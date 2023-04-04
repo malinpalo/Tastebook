@@ -11,7 +11,7 @@ class Recipe(models.Model):
     slug = models.SlugField(max_length=170, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_recipes")
-    image = CloudinaryField('image', 'placeholder')
+    image = CloudinaryField('image', default='placeholder')
     date_created = models.DateTimeField(auto_now_add=True)
     update_on = models.DateTimeField(auto_now=True)
     recipe_description = models.TextField()
@@ -39,7 +39,6 @@ class Comment(models.Model):
     share_your_thoughts = models.TextField()
     email = models.EmailField()
     date_created = models.DateTimeField(auto_now_add=True)
-
 
     class Meta:
         ordering = ['date_created']
