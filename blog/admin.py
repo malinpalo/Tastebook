@@ -16,10 +16,7 @@ class RecipeAdmin(SummernoteModelAdmin):
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """For Admin to manage Comments"""
-    list_filter = ('approved', 'date_created')
+    list_filter = ('date_created')
     list_display = ('name', 'share_your_thoughts', 'date_created')
     search_fields = ('name', 'email', 'share_your_thoughts')
-    actions = ['accept_comments']
-
-    def accept_comments(self, request, queryset):
-        queryset.update(approved=True)
+    

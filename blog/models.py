@@ -39,7 +39,7 @@ class Comment(models.Model):
     share_your_thoughts = models.TextField()
     email = models.EmailField()
     date_created = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+
 
     class Meta:
         ordering = ['date_created']
