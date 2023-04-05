@@ -18,7 +18,7 @@
                 {% if "placeholder" in recipe.image.url %}
                     <img src="https://images.pexels.com/photos/7218637/pexels-photo-7218637.jpeg?auto=compress&cs=tinysrgb&w=300" class="card-img-top" alt="Default Placeholder image">
                 {% else %}
-                    <img src="{{ recipe.image.url }}" class="card-img-top" alt="Image of a recipe added by a user">
+                    <img src="{{ recipe.image.url }}" class="card-img-top" alt="Shows an image of a recipe added by a user">
                 {% endif %}
                 <div class="card-body text-center">
                     <h5 class="card-title">{{ recipe.title }}</h5>
