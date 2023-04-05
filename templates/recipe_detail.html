@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- The recipe details-->
+<div class="row g-0">
+    <div class="col-12">
+        <div class="card border-0 mt-4">
+            {% if "placeholder" in recipe.image.url %}
+                <img src="https://images.pexels.com/photos/7218637/pexels-photo-7218637.jpeg?auto=compress&cs=tinysrgb&w=300" class="recipe-det-img" alt="Default Placeholder image">
+            {% else %}
+                <img src="{{ recipe.image.url }}" class="recipe-det-img" alt="Shows an image of the selected recipe">
+            {% endif %}  
+
+            {% if user.is_authenticated and user == recipe.author %}
+                <a href="" class="delete-recipe" data-bs-toggle="modal" data-bs-target="#deleteRecipeModal">X</a>
+                <a href="{% url 'edit_recipe' recipe.id %}" ><i class="fa fa-pencil edit-recipe"></i></a>
+            {% endif %}
+            <div class="card-body">
+                <h3 class="detail-heading text-center">{{ recipe.title }}</h3>
+                <p class="card-text text-center author"> Added by {{ recipe.author }}</p>
+
+                <div class="likes">
+                    {% if user.is_authenticated %}
+                    <form class="d-inline" action="{% url 'recipe_likes' recipe.slug %}" method="POST">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" aria-label="Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
+                            {% if recipe.number_of_likes == 1 %}
+                            <span class="text-secondary"> You liked it</span>
+
+                            {% elif recipe.number_of_likes == 2  %}
+                            <span class="text-secondary"> You and 1 other person liked it</span>
+
+                            {% else %}
+                            <span class="text-secondary"> You and {{ recipe.number_of_likes|add:"-1" }} other people liked it</span>
+                            {% endif %}
+                        {% else %}
+                        <button type="submit" aria-label="Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
+                        <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
+                        {% endif %}
+                    </form>
+
+                    {% else %}
+                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                    {% endif %}
+                           
+                </div>
+                <!-- The main recipe details. The safe tag is used when using summernote widget. -->
+                <div class="detail-card">
+                    <h4>Recipe-description</h4>
+                    <div class="card-text"> {{ recipe.recipe_description|safe }}</div>
+                    <h4>Recipe-ingredients</h4>
+                    <div class="card-text"> {{ recipe.recipe_ingredients|safe }}</div>
+                    <h4>How to</h4>
+                    <div class="card-text"> {{ recipe.how_to|safe }}</div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div> 
+
+   
+<!-- Comment section -->
+<div class="row g-0">
+    <div class="col-12 mb-2 pb-4">
+        <div class="card recipe-comment-card">
+            <h2 class="text-center">Comments</h2>
+            <div class="card-body">
+                {% for comment in comments %}
+                <div class="recipe-comment-body md-4">
+                    <p>{{ comment.share_your_thoughts }}</p>
+                    <p class="mb-2"> Written by <span class="written-on">{{ comment.name }}</span> on <span class="written-on">{{ comment.date_added }}</span></p>
+                        
+                    {% if user.is_authenticated and user.username == comment.name %}
+                    <a href="" class="delete-comment" data-bs-toggle="modal" data-bs-target="#deleteCommentModal">X</a>
+                    <a href="{% url 'edit_comment' comment.id %}" ><i class="fad fa-pencil edit-comment"></i></a>
+                    {% endif %}   
+                </div>   
+
+<!-- Add a comment -->
+{% if user.is_authenticated %}
+<div class="row g-0">
+    <div class="col-12">
+        <div class="card add-comment">
+            <div class="card-body post-comment-body">
+                <h5>Add a Comment:</h5>
+                <p>By: {{ user.username }}</p>
+                <form method="post">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" aria-label="Add Comment" class="btn btn-blue mt-2">Add</button>
+                </form>
+                {% endif %}
+            </div>       
+        </div>
+    </div>
+</div>
