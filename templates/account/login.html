@@ -13,7 +13,6 @@
     <h1>{% trans "SIGN IN" %}</h1>
     <p>{% blocktrans %}If you don't have an account, <br> then click here to
     <a href="{{ signup_url }}" class="">Sign Up</a> first.{% endblocktrans %}</p>
-    <img src="{% # %}" class="login-img" alt="">
   </div>
 
   <form class="login" method="POST" action="{% url 'account_login' %}">
