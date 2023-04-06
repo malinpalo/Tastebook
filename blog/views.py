@@ -1,11 +1,12 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
+from django.http import HttpResponseRedirect
 from django.views import generic, View
 from .models import Recipe
 from .forms import CommentForm
 
 
 def home(request):
-    """ The home page """
+    """The home page"""
     return render(request, 'index.html')
 
 
@@ -56,7 +57,8 @@ class RecipeDetails(View):
             comment = comment_form.save(commit=False)
             comment.recipe = recipe
             comment.save()
-            messages.success(request, 'Your Comment has been Successfully Added')
+            messages.success
+            (request, 'Your Comment has been Successfully Added')
         else:
             comment_form = CommentForm()
 
@@ -70,3 +72,15 @@ class RecipeDetails(View):
                 "comment_form": CommentForm()
             },
         )
+
+
+class RecipeLike(View):
+    """The class view to like and unlike a recipe"""
+    def post(self, request, slug):
+        recipe = get_object_or_404(Recipe, slug=slug)
+
+        if recipe.likes.filter(id=request.user.id).exists():
+            recipe.likes.remove(request.user)
+        else:
+            recipe.likes.add(request.user)
+        return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))

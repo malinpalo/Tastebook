@@ -24,10 +24,10 @@
 
                 <div class="likes">
                     {% if user.is_authenticated %}
-                    <form class="d-inline" action="{% url 'recipe_likes' recipe.slug %}" method="POST">
+                    <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                         {% csrf_token %}
                         {% if liked %}
-                        <button type="submit" aria-label="Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
+                        <button type="submit" aria-label="A Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
                             {% if recipe.number_of_likes == 1 %}
                             <span class="text-secondary"> You liked it</span>
 
@@ -38,9 +38,9 @@
                             <span class="text-secondary"> You and {{ recipe.number_of_likes|add:"-1" }} other people liked it</span>
                             {% endif %}
                         {% else %}
-                        <button type="submit" aria-label="Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
-                        <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
+                        <button type="submit" aria-label="A Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
                         {% endif %}
+                        <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
                     </form>
 
                     {% else %}
