@@ -21,8 +21,8 @@
             <div class="card-body">
                 <h3 class="detail-heading text-center">{{ recipe.title }}</h3>
                 <p class="card-text text-center author"> Added by {{ recipe.author }}</p>
-
-                <div class="likes">
+                <!-- Likes section-->
+                <div class="likes_recipe">
                     {% if user.is_authenticated %}
                     <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                         {% csrf_token %}
@@ -80,7 +80,7 @@
                     {% endif %}   
                 </div>   
 
-<!-- Add a comment -->
+<!-- Add a comment section -->
 {% if user.is_authenticated %}
 <div class="row g-0">
     <div class="col-12">
