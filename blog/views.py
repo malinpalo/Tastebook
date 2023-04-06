@@ -3,6 +3,9 @@ from django.http import HttpResponseRedirect
 from django.views import generic, View
 from .models import Recipe
 from .forms import CommentForm, RecipeForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
+from django.utils.text import slugify
 
 
 def home(request):
@@ -18,7 +21,7 @@ class ListOfRecipes(generic.ListView):
     paginated_by = 6
 
 
-class RecipeDetails(View):
+class RecipeDetails(LoginRequiredMixin, View):
     """
     Views the recipe detail page
     that displays all the recipe details
@@ -58,7 +61,7 @@ class RecipeDetails(View):
             comment.recipe = recipe
             comment.save()
             messages.success
-            (request, 'Your Comment has been Successfully Added')
+            (request, 'Your comment has been successfully added')
         else:
             comment_form = CommentForm()
 
@@ -72,6 +75,26 @@ class RecipeDetails(View):
                 "comment_form": CommentForm()
             },
         )
+
+
+@login_required
+def add_recipe(request):
+    """The view that allows users to add a recipe"""
+    form = RecipeForm()
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES)
+        if form.is_valid():
+            event = form.save(commit=False)
+            event.author = request.user
+            event.slug = slugify(event.title)
+            event.status = 1
+            event.save()
+            messages.success
+            (request, 'Your recipe has been successfully added')
+            return redirect('recipe')
+
+    context = {'form': form}
+    return render(request, 'post_recipe.html', context)
 
 
 class RecipeLike(View):
