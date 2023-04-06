@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from django.views import generic, View
 from .models import Recipe
 from .forms import CommentForm, RecipeForm
@@ -95,6 +96,27 @@ def add_recipe(request):
 
     context = {'form': form}
     return render(request, 'post_recipe.html', context)
+
+
+@login_required
+def edit_recipe(request, recipe_id):
+    """The view that allows users to update their recipe"""
+    recipe = Recipe.objects.get(pk=recipe_id)
+    form = RecipeForm(
+        request.POST or None, request.FILES or None, instance=recipe)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Your recipe was successfully updated')
+        return HttpResponseRedirect(
+            reverse('recipe_detail', args=[recipe.slug]))
+    return render(
+        request,
+        "edit_recipe.html",
+        {
+            "recipe": recipe,
+            "form": form
+        },
+    )
 
 
 class RecipeLike(View):
