@@ -3,6 +3,11 @@ from django.views import generic, View
 from .models import Recipe
 
 
+def home(request):
+    """ The home page """
+    return render(request, 'index.html')
+
+
 class ListOfRecipes(generic.ListView):
     """List of recipes on the webpage, displays 6 per page"""
     template_name = 'recipe.html'
