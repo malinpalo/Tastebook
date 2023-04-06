@@ -22,7 +22,7 @@ class ListOfRecipes(generic.ListView):
     paginated_by = 6
 
 
-class RecipeDetails(LoginRequiredMixin, View):
+class RecipeDetail(LoginRequiredMixin, View):
     """
     Views the recipe detail page
     that displays all the recipe details

@@ -9,7 +9,7 @@
 
 <div class="container">
     {% if user.is_authenticated %}
-        <a href="{% url 'add_recipe' %}" class="btn btn-blue">Add Recipe</a>
+        <a href="{% url 'post_recipe' %}" class="btn btn-blue">Add Recipe</a>
     {% endif %}
     <div class="row">
         {% for recipe in ListOfRecipe %}
