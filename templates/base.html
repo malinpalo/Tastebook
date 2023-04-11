@@ -1,13 +1,14 @@
 {% load static %}
 {% url 'home' as home %}
-{% url 'recipes' as recipes %}
+{% url 'recipe' as recipe %}
+{% url 'account_signup' as register %}
+{% url 'account_login' as login %}
+{% url 'account_logout' as logout %}
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
 
     <!-- Navbar -->
     <header class="container-lg g-0">
-      <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark custom-navbar">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark custom-nav">
           <a class="navbar-brand logo ms-2" href="{% url 'home' %}">Tastebook</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.logo {
+    font-family: 'Delicious Handrawn', sans-serif;
+    color: rgb(215, 23, 23);
+}
+
+/* Navigation Bar */
+.custom-nav {
+    background: #7b42ac;
+}
+
+.nav-item {
+    font-family: 'Merriweather', serif;
+}
