@@ -80,7 +80,7 @@ class RecipeDetail(LoginRequiredMixin, View):
 
 @login_required
 def add_recipe(request):
-    """The view that allows users to add a recipe"""
+    """The view that allows users to create a recipe"""
     form = RecipeForm()
     if request.method == 'POST':
         form = RecipeForm(request.POST, request.FILES)
@@ -91,11 +91,11 @@ def add_recipe(request):
             event.status = 1
             event.save()
             messages.success
-            (request, 'Your recipe has been successfully added')
+            (request, 'Your recipe has been successfully created')
             return redirect('recipe')
 
     context = {'form': form}
-    return render(request, 'post_recipe.html', context)
+    return render(request, 'create_recipe.html', context)
 
 
 @login_required
