@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.views import generic, View
@@ -117,6 +117,15 @@ def edit_recipe(request, recipe_id):
             "form": form
         },
     )
+
+
+@login_required
+def delete_recipe(request, recipe_id):
+    """The view that allows users to delete their recipe"""
+    recipe = Recipe.objects.get(pk=recipe_id)
+    recipe.delete()
+    messages.success(request, 'Your recipe was successfully deleted')
+    return redirect('recipe')
 
 
 class RecipeLike(View):
