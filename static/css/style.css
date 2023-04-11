@@ -45,7 +45,7 @@ body {
     top: 20%;
     text-align: center;
     text-shadow: 0.1vh 0.1vh #54671d;
-    color: #cc5730;
+    color: #4299ac;
     font-family: 'Delicious Handrawn', sans-serif;;
     font-size: 12vh; 
 }
@@ -62,7 +62,7 @@ body {
     right: 0;
     top: 17rem;
     text-align: center;
-    background-color: rgba(247, 245, 245, 0.3);
+    background-color: rgba(300, 245, 245, 0,9);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }

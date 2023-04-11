@@ -23,7 +23,16 @@
 
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
+    <!-- Alert messages that shows at the top of the screen -->
+    {% if messages %}
+    <div class="container-lg g-0">
+        <div id="message-alert" class="alert alert-warning" role="alert">
+          {% for message in messages %}
+          {{ message }}
+          {% endfor %}
+        </div>
+    </div>
+    {% endif %}
 
     <!-- Navbar -->
     <header class="container-lg g-0">
