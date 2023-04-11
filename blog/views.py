@@ -148,6 +148,16 @@ def edit_comment(request, comment_id):
     )
 
 
+@login_required
+def delete_comment(request, comment_id):
+    """The view that allows users to delete their Comment"""
+    comment = Comment.objects.get(pk=comment_id)
+    comment.delete()
+    messages.success(request, 'Your comment was successfully deleted')
+    return HttpResponseRedirect(
+        reverse('recipe_detail', args=[comment.recipe.slug]))
+
+
 class RecipeLike(View):
     """The class view to like and unlike a recipe"""
     def post(self, request, slug):

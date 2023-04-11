@@ -79,6 +79,37 @@
                     <a href="{% url 'edit_comment' comment.id %}" ><i class="fad fa-pencil edit-comment"></i></a>
                     {% endif %}   
                 </div>   
+            
+                <!-- Modal taken from bootstrap modals page to delete a comment -->
+                <div class="modal fade" id="deleteCommentModal" tabindex="-1" role="dialog" aria-labelledby="deleteCommentModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content modal-delete">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="deleteCommentModalLabel">Delete Comment</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <p>Please, confirm that you want to delete this comment!</p>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
+                            <form action="{% url 'delete_comment' comment.id %}" method="POST">
+                                {% csrf_token %}
+                                <button class="btn btn-danger" value="Confirm">YES</button>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Add a comment section -->
 {% if user.is_authenticated %}
@@ -94,10 +125,7 @@
                     <button type="submit" aria-label="Add A Comment" class="btn btn-blue mt-2">Add</button>
                 </form>
                 {% endif %}
-            </div>       
-        </div>
-    </div>
-</div>
+            </div>
 
 
  <!-- Modal taken from bootstrap modals page to delete a recipe-->
