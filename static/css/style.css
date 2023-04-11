@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
+* {
+    font-family: 'Merriweather', sans-serif;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -20,4 +24,54 @@ body {
 
 .nav-item {
     font-family: 'Merriweather', serif;
+}
+
+/* Index/Home Page */
+.home-back{
+    background-image: url('https://images.pexels.com/photos/4033636/pexels-photo-4033636.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-title {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    text-align: center;
+    text-shadow: 0.1vh 0.1vh #0951d7;
+    color: #4299ac;
+    font-family: 'Delicious Handrawn', sans-serif;;
+    font-size: 12vh; 
+}
+
+.home-box {
+    width: 50vh;
+    margin-top: 15vh;
+    color: rgb(167, 13, 13);
+    position: absolute;
+    border: 1px solid #4299ac;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 17rem;
+    text-align: center;
+    background-color: rgba(247, 245, 245, 0.3);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.home-box > h2 {
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.home-box > p {
+    margin: 1rem;   
 }
