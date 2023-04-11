@@ -98,3 +98,32 @@ h4 {
     color: #7d807e;
     text-decoration: underline;
 }
+
+/* Footer */
+
+footer {
+    margin-top: auto;
+  }
+
+.footer-base {
+    width: 30vw;
+    margin: 1rem auto;
+}
+
+.social-media-icons {
+    width: 20vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-bottom:1rem;
+}
+
+.social-media-icons > li {
+    list-style: none;
+}
+
+.social-media-icons i {
+    font-size: 4vh;
+    color: #4299ac;
+}

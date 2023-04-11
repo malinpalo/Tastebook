@@ -16,7 +16,7 @@ def home(request):
 
 class ListOfRecipes(generic.ListView):
     """List of recipes on the webpage, displays 6 per page"""
-    template_name = 'recipe.html'
+    template_name = 'blog_recipes.html'
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-date_created')
     paginated_by = 6
