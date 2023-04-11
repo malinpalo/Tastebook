@@ -13,7 +13,7 @@
                 {% csrf_token %}
                 {{ form | crispy }}
                 
-                <a href="{% url 'recipe' %}" class="btn btn-success mt-4 mb-4">Cancel</a>
+                <a href="{% url 'blog_recipes' %}" class="btn btn-success mt-4 mb-4">Cancel</a>
                 <button type="submit" class="btn btn-blue mt-4 mb-4">SUBMIT</button>
             </form>
             {% endif %}

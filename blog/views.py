@@ -30,7 +30,7 @@ class RecipeDetail(LoginRequiredMixin, View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
-        comments = recipe.comments.order_by("date_added")
+        recipe_comments = recipe.recipe_comments.order_by("date_added")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -40,7 +40,7 @@ class RecipeDetail(LoginRequiredMixin, View):
             "recipe_detail.html",
             {
                 "recipe": recipe,
-                "comments": comments,
+                "recipe_comments": recipe_comments,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
@@ -49,7 +49,7 @@ class RecipeDetail(LoginRequiredMixin, View):
     def post(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
-        comments = recipe.comments.order_by("date_created")
+        recipe_comments = recipe.recipe_comments.order_by("date_created")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True
@@ -71,7 +71,7 @@ class RecipeDetail(LoginRequiredMixin, View):
             "recipe_detail.html",
             {
                 "recipe": recipe,
-                "comments": comments,
+                "recipe_comments": recipe_comments,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
@@ -92,7 +92,7 @@ def add_recipe(request):
             event.save()
             messages.success
             (request, 'Your recipe has been successfully created')
-            return redirect('recipe')
+            return redirect('blog_recipes')
 
     context = {'form': form}
     return render(request, 'create_recipe.html', context)
@@ -125,7 +125,7 @@ def delete_recipe(request, recipe_id):
     recipe = Recipe.objects.get(pk=recipe_id)
     recipe.delete()
     messages.success(request, 'Your recipe was successfully deleted')
-    return redirect('recipe')
+    return redirect('blog_recipes')
 
 
 @login_required
