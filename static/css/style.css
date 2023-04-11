@@ -14,12 +14,12 @@ body {
 
 .logo {
     font-family: 'Delicious Handrawn', sans-serif;
-    color: rgb(215, 23, 23);
+    color: #cc5730;
 }
 
 /* Navigation Bar */
 .custom-nav {
-    background: #7b42ac;
+    background: #54671d;
 }
 
 .nav-item {
@@ -44,8 +44,8 @@ body {
     right: 0;
     top: 20%;
     text-align: center;
-    text-shadow: 0.1vh 0.1vh #0951d7;
-    color: #4299ac;
+    text-shadow: 0.1vh 0.1vh #54671d;
+    color: #cc5730;
     font-family: 'Delicious Handrawn', sans-serif;;
     font-size: 12vh; 
 }
@@ -53,7 +53,7 @@ body {
 .home-box {
     width: 50vh;
     margin-top: 15vh;
-    color: rgb(167, 13, 13);
+    color: #cc5730;
     position: absolute;
     border: 1px solid #4299ac;
     margin-left: auto;
@@ -74,4 +74,27 @@ body {
 
 .home-box > p {
     margin: 1rem;   
+}
+
+/* Recipe_detail Page */
+.recipe-det-img {
+    margin: 0 auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.detail-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.detail-card {
+    width: 55%;
+    margin: 0 auto;
+}
+
+h4 {
+    font-weight: ;
+    color: #7d807e;
+    text-decoration: underline;
 }
