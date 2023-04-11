@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.views import generic, View
-from .models import Recipe
+from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
@@ -126,6 +126,26 @@ def delete_recipe(request, recipe_id):
     recipe.delete()
     messages.success(request, 'Your recipe was successfully deleted')
     return redirect('recipe')
+
+
+@login_required
+def edit_comment(request, comment_id):
+    """The view that allows users edit their Comment"""
+    comment = Comment.objects.get(pk=comment_id)
+    form = CommentForm(request.POST or None, instance=comment)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Your comment was successfully updated')
+        return HttpResponseRedirect(
+            reverse('recipe_detail', args=[comment.recipe.slug]))
+    return render(
+        request,
+        "edit_comment.html",
+        {
+            "comment": comment,
+            "form": form
+        },
+    )
 
 
 class RecipeLike(View):
