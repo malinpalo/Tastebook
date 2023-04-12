@@ -130,7 +130,7 @@ body {
 
 /* Comments section*/
 .recipe-comment-card {
-    max-width: 55%;
+    max-width: 65%;
     margin: 0 auto;
 }
 
@@ -154,12 +154,19 @@ body {
 /* Edit comment */
 .edit-comment {
     position: absolute;
-    font-weight: bolder;
     right: 2.5rem;
     top: .2rem;
 }
 
 /* Adding a comment */
+.add-recipe-comment {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.card-body textarea {
+    height: 6rem;
+}
 
 /*Adding recipes*/
 .create-form {
