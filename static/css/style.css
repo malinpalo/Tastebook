@@ -144,14 +144,19 @@ body {
 /* Delete comment */
 .delete-comment {
     text-decoration: none;
-    color: #cc5730;
-    font-weight: bold;
+    color: #54671d;
+    font-weight: bolder;
     position: absolute;
+    right: 1rem;
+    top: 0;
 }
 
 /* Edit comment */
 .edit-comment {
     position: absolute;
+    font-weight: bolder;
+    right: 2.5rem;
+    top: .2rem;
 }
 
 /* Adding a comment */

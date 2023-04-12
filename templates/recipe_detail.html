@@ -15,8 +15,8 @@
             {% endif %}  
 
             {% if user.is_authenticated and user == recipe.author %}
-                <a href="" class="delete-recipe" data-bs-toggle="modal" data-bs-target="#deleteRecipeModal">X</a>
-                <a href="{% url 'edit_recipe' recipe.id %}" ><i class="fa fa-pencil edit-recipe"></i></a>
+                <a href="" class="delete-recipe" data-bs-toggle="modal" data-bs-target="#deleteRecipeModal"><i class="far fa-trash-alt"></i></a>
+                <a href="{% url 'edit_recipe' recipe.id %}" ><i class="fas fa-edit edit-recipe"></i></a>
             {% endif %}
             <div class="card-body">
                 <h3 class="detail-heading text-center">{{ recipe.title }}</h3>
@@ -75,7 +75,7 @@
                     <p class="mb-2"> Written by <span class="wrote-on">{{ comment.name }}</span> on <span class="wrote-on">{{ comment.date_created }}</span></p>
                         
                     {% if user.is_authenticated and user.username == comment.name %}
-                    <a href="" class="delete-comment" data-bs-toggle="modal" data-bs-target="#deleteCommentModal">X</a>
+                    <a href="" class="delete-comment" data-bs-toggle="modal" data-bs-target="#deleteCommentModal"><i class="far fa-trash-alt"></i></a>
                     <a href="{% url 'edit_comment' comment.id %}" ><i class="fas fa-edit edit-comment"></i></a>
                     {% endif %}   
                 </div>   
