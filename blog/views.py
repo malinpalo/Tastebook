@@ -16,9 +16,9 @@ def home(request):
 
 class ListOfRecipes(generic.ListView):
     """List of recipes on the webpage, displays 6 per page"""
-    template_name = 'blog_recipes.html'
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-date_created')
+    template_name = 'blog_recipes.html'
     paginated_by = 6
 
 
@@ -30,7 +30,7 @@ class RecipeDetail(LoginRequiredMixin, View):
     def get(self, request, slug, *args, **kwargs):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
-        recipe_comments = recipe.recipe_comments.order_by("date_added")
+        recipe_comments = recipe.recipe_comments.order_by("date_created")
         liked = False
         if recipe.likes.filter(id=self.request.user.id).exists():
             liked = True

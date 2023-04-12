@@ -12,7 +12,7 @@
         <a href="{% url 'create_recipe' %}" class="btn btn-blue">Add Recipe</a>
     {% endif %}
     <div class="row">
-        {% for recipe in ListOfRecipe %}
+        {% for recipe in recipe_list %}
         <div class="col-md-6 col-lg-4">
             <div class="card mt-4">
                 {% if "placeholder" in recipe.image.url %}

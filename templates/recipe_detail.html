@@ -69,7 +69,7 @@
         <div class="card comment-card">
             <h2 class="text-center">Comments</h2>
             <div class="card-body">
-                {% for comment in comments %}
+                {% for comment in recipe_comments %}
                 <div class="comment-body md-4">
                     <p>{{ comment.share_your_thoughts }}</p>
                     <p class="mb-2"> Written by <span class="written-on">{{ comment.name }}</span> on <span class="written-on">{{ comment.date_added }}</span></p>
