@@ -22,7 +22,7 @@
                 <h3 class="detail-heading text-center">{{ recipe.title }}</h3>
                 <p class="card-text text-center author"> Added by {{ recipe.author }}</p>
                 <!-- Likes section-->
-                <div class="likes_recipe">
+                <div class="likes-recipe">
                     {% if user.is_authenticated %}
                     <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                         {% csrf_token %}

@@ -166,6 +166,19 @@ body {
     font-weight: bold;
 }
 
+/* Likes */
+.likes-recipe {
+    width: 65%;
+    margin: 1rem auto;
+}
+
+.likes-recipe button {
+    color: #cc5730;
+    background: transparent;
+    border: none;
+}
+
+
 
 /* Footer */
 
