@@ -26,6 +26,14 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+/*Image in recipe page*/
+.card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover; 
+    
+}
+
 /* Index/Home Page */
 .home-back{
     background-image: url('https://images.pexels.com/photos/4033636/pexels-photo-4033636.jpeg?auto=compress&cs=tinysrgb&w=1600');

@@ -99,6 +99,15 @@ def add_recipe(request):
 
 
 @login_required
+def delete_recipe(request, recipe_id):
+    """The view that allows users to delete their recipe"""
+    recipe = Recipe.objects.get(pk=recipe_id)
+    recipe.delete()
+    messages.success(request, 'Your recipe was successfully deleted')
+    return redirect('blog_recipes')
+
+
+@login_required
 def edit_recipe(request, recipe_id):
     """The view that allows users to update their recipe"""
     recipe = Recipe.objects.get(pk=recipe_id)
@@ -120,12 +129,13 @@ def edit_recipe(request, recipe_id):
 
 
 @login_required
-def delete_recipe(request, recipe_id):
-    """The view that allows users to delete their recipe"""
-    recipe = Recipe.objects.get(pk=recipe_id)
-    recipe.delete()
-    messages.success(request, 'Your recipe was successfully deleted')
-    return redirect('blog_recipes')
+def delete_comment(request, comment_id):
+    """The view that allows users to delete their Comment"""
+    comment = Comment.objects.get(pk=comment_id)
+    comment.delete()
+    messages.success(request, 'Your comment was successfully deleted')
+    return HttpResponseRedirect(
+        reverse('recipe_detail', args=[comment.recipe.slug]))
 
 
 @login_required
@@ -146,16 +156,6 @@ def edit_comment(request, comment_id):
             "form": form
         },
     )
-
-
-@login_required
-def delete_comment(request, comment_id):
-    """The view that allows users to delete their Comment"""
-    comment = Comment.objects.get(pk=comment_id)
-    comment.delete()
-    messages.success(request, 'Your comment was successfully deleted')
-    return HttpResponseRedirect(
-        reverse('recipe_detail', args=[comment.recipe.slug]))
 
 
 class RecipeLike(View):
