@@ -5,5 +5,5 @@ $(document).ready(function() {
         if ($('#message-alert').length > 0) {
             $('#message-alert').remove();
         }
-    }, 15000);
+    }, 1500);
 });
