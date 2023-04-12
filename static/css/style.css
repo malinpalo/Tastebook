@@ -108,6 +108,20 @@ h4 {
     text-decoration: underline;
 }
 
+/* Delete recipe  */
+.delete-recipe {
+    text-decoration: none;
+    color: #4299ac;
+    position: absolute;
+    margin: 0 auto;
+}
+
+/* Edit recipe */
+.edit-recipe {
+    position: absolute;
+}
+
+
 /* Footer */
 
 footer {
