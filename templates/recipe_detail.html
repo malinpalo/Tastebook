@@ -48,7 +48,7 @@
                     {% endif %}
                            
                 </div>
-                <!-- The main recipe details. The safe tag is used when using summernote widget. -->
+                <!-- The main recipe details -->
                 <div class="detail-card">
                     <h3>Recipe-description</h3>
                     <div class="card-text"> {{ recipe.recipe_description|safe }}</div>
@@ -115,7 +115,7 @@
 {% if user.is_authenticated %}
 <div class="row g-0">
     <div class="col-12">
-        <div class="card add-comment">
+        <div class="card post-comment">
             <div class="card-body post-comment-body">
                 <h5>Add a Comment:</h5>
                 <p>By: {{ user.username }}</p>
@@ -126,6 +126,9 @@
                 </form>
                 {% endif %}
             </div>
+        </div>
+    </div>
+</div>
 
 
  <!-- Modal taken from bootstrap modals page to delete a recipe-->
