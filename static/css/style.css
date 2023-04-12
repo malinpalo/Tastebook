@@ -107,14 +107,22 @@ body {
 /* Delete recipe  */
 .delete-recipe {
     text-decoration: none;
-    color: #4299ac;
+    color: #cc5730;
     position: absolute;
-    margin: 0 auto;
+    top: -1rem;
+    right: 0;
+    font-size: x-large;
+    font-weight: bolder;
+    
 }
 
 /* Edit recipe */
 .edit-recipe {
     position: absolute;
+    top: -5px;
+    right: 2rem;
+    font-size: large;
+    font-weight: bolder;
 }
 
 /* Comments section*/
