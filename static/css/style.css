@@ -135,7 +135,7 @@ body {
 /* Delete comment */
 .delete-comment {
     text-decoration: none;
-    color: #4299ac;
+    color: #cc5730;
     font-weight: bold;
     position: absolute;
 }
@@ -146,6 +146,26 @@ body {
 }
 
 /* Adding a comment */
+
+/*Adding recipes*/
+.create-form {
+    text-align: center;
+}
+
+.create-form input, .create-form textarea {
+    border: 1px solid #cc5730;
+}
+
+.create-form input {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.create-form label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
 
 /* Footer */
 
