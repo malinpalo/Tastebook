@@ -28,8 +28,8 @@ body {
 
 /*Image in recipe page*/
 .card-img-top {
-    width: 100%;
-    height: 40vh;
+    width: 100vw;
+    height: 50vh;
     object-fit: cover; 
     
 }
@@ -118,6 +118,26 @@ h4 {
 
 /* Edit recipe */
 .edit-recipe {
+    position: absolute;
+}
+
+/* Comments section*/
+.comment-card {
+    border-radius: 0%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* Delete comment */
+.delete-comment {
+    text-decoration: none;
+    color: #4299ac;
+    font-weight: bold;
+    position: absolute;
+}
+
+/* Edit comment */
+.edit-comment {
     position: absolute;
 }
 
