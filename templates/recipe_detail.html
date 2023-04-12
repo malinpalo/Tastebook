@@ -66,17 +66,17 @@
 <!-- Comment section -->
 <div class="row g-0">
     <div class="col-12 mb-2 pb-4">
-        <div class="card comment-card">
+        <div class="card recipe-comment-card">
             <h2 class="text-center">Comments</h2>
             <div class="card-body">
                 {% for comment in recipe_comments %}
-                <div class="comment-body md-4">
+                <div class="recipe-comment-body md-4">
                     <p>{{ comment.share_your_thoughts }}</p>
-                    <p class="mb-2"> Written by <span class="written-on">{{ comment.name }}</span> on <span class="written-on">{{ comment.date_added }}</span></p>
+                    <p class="mb-2"> Written by <span class="wrote-on">{{ comment.name }}</span> on <span class="wrote-on">{{ comment.date_created }}</span></p>
                         
                     {% if user.is_authenticated and user.username == comment.name %}
                     <a href="" class="delete-comment" data-bs-toggle="modal" data-bs-target="#deleteCommentModal">X</a>
-                    <a href="{% url 'edit_comment' comment.id %}" ><i class="fad fa-pencil edit-comment"></i></a>
+                    <a href="{% url 'edit_comment' comment.id %}" ><i class="fas fa-edit edit-comment"></i></a>
                     {% endif %}   
                 </div>   
             
@@ -122,7 +122,7 @@
                 <form method="post">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" aria-label="Add A Comment" class="btn btn-blue mt-2">Add</button>
+                    <button type="submit" aria-label="Add A Comment" class="btn btn-blue mt-2">Add a comment</button>
                 </form>
                 {% endif %}
             </div>
