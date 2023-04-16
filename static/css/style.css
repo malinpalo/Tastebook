@@ -41,13 +41,13 @@ body {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 20%;
+    top: 6rem;
     position: absolute;
     text-align: center;
-    text-shadow: 0.1vh 0.1vh #54671d;
+    text-shadow: 0.1vh 0.1vh #cc5730;
     color: #4299ac;
     font-family: 'Delicious Handrawn', sans-serif;;
-    font-size: 12vh; 
+    font-size: 14rem; 
 }
 
 .home-box {
