@@ -19,7 +19,7 @@ class ListOfRecipes(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-date_created')
     template_name = 'blog_recipes.html'
-    paginated_by = 6
+    paginate_by = 6
 
 
 class RecipeDetail(LoginRequiredMixin, View):
