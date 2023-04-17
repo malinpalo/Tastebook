@@ -292,3 +292,6 @@ footer {
     font-size: 4vh;
     color: #54671d;
 }
+
+@media (max-width: 800px) {
+    
