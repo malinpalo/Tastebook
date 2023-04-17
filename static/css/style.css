@@ -25,11 +25,12 @@
 .home-back{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url('https://res.cloudinary.com/dz0w8vqzx/image/upload/v1681733864/pexels-photo-4033636_gtrsg0.jpg');
     min-height: 75vh;
+    padding-bottom: 0.5rem;
     background-size: cover;
 }
 
 .home-title {
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
     text-shadow: 0.1vh 0.1vh #cc5730;
     color: #4299ac;
@@ -41,7 +42,7 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.1);
     border: 0.1rem solid #4299ac;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .home-box > h2 {
@@ -221,27 +222,18 @@
 }
 
 /* Footer */
-
-footer {
-    margin-top: 3rem;
-  }
-
 .footer-base {
     width: 30vw;
-    margin: 1rem auto;
 }
-
 .social-media-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
     padding: 0 7.5rem;
 }
-
 .social-media-icons li {
     list-style: none;
 }
-
 .social-media-icons i {
     font-size: 1.5rem;
     color: #54671d;
