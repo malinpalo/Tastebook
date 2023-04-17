@@ -29,22 +29,22 @@
                         {% if liked %}
                         <button type="submit" aria-label="A Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="fas fa-heart"></i></button>
                             {% if recipe.number_of_likes == 1 %}
-                            <span class="text-secondary"> You liked it</span>
+                            <span class="text-dark"> You liked it</span>
 
                             {% elif recipe.number_of_likes == 2  %}
-                            <span class="text-secondary"> You and 1 other person liked it</span>
+                            <span class="text-dark"> You and 1 other person liked it</span>
 
                             {% else %}
-                            <span class="text-secondary"> You and {{ recipe.number_of_likes|add:"-1" }} other people liked it</span>
+                            <span class="text-dark"> You and {{ recipe.number_of_likes|add:"-1" }} other people liked it</span>
                             {% endif %}
                         {% else %}
                         <button type="submit" aria-label="A Like Button" name="recipepost_id" value="{{recipe.slug}}"><i class="far fa-heart"></i></button>
                         {% endif %}
-                        <span class="text-secondary"> {{ recipe.number_of_likes }} </span>
+                        <span class="text-dark"> {{ recipe.number_of_likes }} </span>
                     </form>
 
                     {% else %}
-                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                    <span class="text-dark"><i class="far fa-heart"></i></span>
                     {% endif %}
                            
                 </div>

@@ -13,7 +13,7 @@
             <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-success mt-4">Cancel</a>
+                <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-warning mt-4">Cancel</a>
                 <button type="submit" class="btn btn-blue mt-4">UPDATE</button>
             </form>
             {% endif %}

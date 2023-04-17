@@ -92,7 +92,7 @@ body {
 
 .detail-card {
     margin: 0 auto;
-    width: 55%;
+    max-width: 65%;
 }
 
 .detail-card > h3 {
@@ -137,7 +137,7 @@ body {
 .recipe-comment-body {
     position: relative;
     background-color: #f1f1ec;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0.6rem;
     margin-bottom: 1rem;
 }
 
