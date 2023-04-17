@@ -67,13 +67,11 @@
     text-decoration: underline;
 }
 
-.detail-card {
-    margin: 0 auto;
-    max-width: 65%;
-}
-
 .detail-card > h3 {
     text-decoration: underline;
+}
+.card-text {
+    padding-bottom: 1rem;
 }
 
 /*Image in recipe page*/
@@ -253,12 +251,9 @@ footer {
 }
 
 .social-media-icons {
-    width: 20vw;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    padding-bottom:1rem;
 }
 
 .social-media-icons > li {
@@ -270,6 +265,12 @@ footer {
     color: #54671d;
 }
 
-@media (max-width: 780px) {
-    
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+.home-title {
+    font-size: 10rem;
+}
+.home-box {
+    margin: 4rem;
+}
 }
