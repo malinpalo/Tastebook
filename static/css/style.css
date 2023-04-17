@@ -55,6 +55,7 @@
 
 /* Recipe_detail Page */
 .recipe-det-img {
+    margin: 2rem 1rem 0 1rem;
     object-fit: cover;
 }
 
@@ -72,43 +73,43 @@
 
 /* Delete recipe  */
 .delete-recipe {
-    text-decoration: none;
     color: #54671d;
     position: absolute;
+    padding-right: 1rem;
     top: -1rem;
     right: 0;
-    font-size: x-large;
-    font-weight: bolder;
-    
+    font-size: large;  
 }
 
 /* Edit recipe */
 .edit-recipe {
     color: #54671d;
     position: absolute;
-    top: -5px;
-    right: 2rem;
+    padding-right: 0.8rem;
+    top: -0.7rem;
+    right: 1.6rem;
     font-size: large;
-    font-weight: bolder;
 }
 
 /* Comments section*/
-
+.recipe-comment-card {
+    padding-top: 1rem;
+    margin: 1rem;
+}
 .recipe-comment-body {
     position: relative;
     background-color: #f1f1ec;
-    padding: 0.6rem;
+    padding: 1rem 0.7rem;
     margin-bottom: 1rem;
 }
 
 /* Delete comment */
 .delete-comment {
-    text-decoration: none;
     color: #54671d;
-    font-weight: bolder;
     position: absolute;
     right: 1rem;
     top: 0;
+    font-size: large;
 }
 
 /* Edit comment */
@@ -116,17 +117,13 @@
     color: #54671d;
     position: absolute;
     right: 2.5rem;
-    top: .3rem;
+    top: .2rem;
+    font-size: large;
 }
-
 /* Adding a comment */
-.recipe-comment-card {
-    margin: 1rem;
-}
 .add-recipe-comment {
     margin: 1rem;
 }
-
 .card-body textarea {
     height: 6rem;
 }
@@ -238,14 +235,15 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+    padding: 0 7.5rem;
 }
 
-.social-media-icons > li {
+.social-media-icons li {
     list-style: none;
 }
 
 .social-media-icons i {
-    font-size: 4vh;
+    font-size: 1.5rem;
     color: #54671d;
 }
 
