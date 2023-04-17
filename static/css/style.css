@@ -110,7 +110,7 @@ body {
 /* Delete recipe  */
 .delete-recipe {
     text-decoration: none;
-    color: #cc5730;
+    color: #54671d;
     position: absolute;
     top: -1rem;
     right: 0;
@@ -121,6 +121,7 @@ body {
 
 /* Edit recipe */
 .edit-recipe {
+    color: #54671d;
     position: absolute;
     top: -5px;
     right: 2rem;
@@ -153,9 +154,10 @@ body {
 
 /* Edit comment */
 .edit-comment {
+    color: #54671d;
     position: absolute;
     right: 2.5rem;
-    top: .2rem;
+    top: .3rem;
 }
 
 /* Adding a comment */
