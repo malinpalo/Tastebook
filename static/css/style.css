@@ -199,7 +199,7 @@ body {
     border: none;
 }
 
-/* Login */
+/* Login Page */
 
 .login-title {
     background-color: #f1f2EC;
@@ -228,6 +228,25 @@ body {
 .btn-blue{
     background-color: #54671d;
     color: #f1f2EC;
+}
+
+/* Sign Up Page*/
+.signup-user {
+    margin-bottom: 1rem;
+}
+
+.signup-user label {
+    margin-left: -2rem;
+    width: 9rem;
+    display: inline-block;
+}
+
+.signup-user input {
+    border: 1.5px solid #54671d;
+}
+
+.btn-blue {
+    margin-top: 2rem;
 }
 
 /* Footer */
