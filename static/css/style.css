@@ -132,9 +132,11 @@
 }
 
 /* Adding a comment */
+.recipe-comment-card {
+    margin: 1rem;
+}
 .add-recipe-comment {
-    max-width: 65%;
-    margin: 0 auto;
+    margin: 1rem;
 }
 
 .card-body textarea {
