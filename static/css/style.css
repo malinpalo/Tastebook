@@ -13,8 +13,9 @@ body {
 }
 
 .logo {
-    font-family: 'Delicious Handrawn', sans-serif;
     color: #cc5730;
+    font-size: 1.5rem;
+    font-family: 'Delicious Handrawn', sans-serif;
 }
 
 /* Navigation Bar */
@@ -24,6 +25,7 @@ body {
 
 .nav-item {
     font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
 }
 
 /* Index/Home Page */
