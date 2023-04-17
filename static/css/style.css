@@ -55,11 +55,7 @@
 
 /* Recipe_detail Page */
 .recipe-det-img {
-    margin: 0 auto;
     object-fit: cover;
-    position: relative;
-    width: 50%;
-    height: 55vh;
 }
 
 .detail-heading {
@@ -72,14 +68,6 @@
 }
 .card-text {
     padding-bottom: 1rem;
-}
-
-/*Image in recipe page*/
-.card-img-top {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover; 
-    
 }
 
 /* Delete recipe  */

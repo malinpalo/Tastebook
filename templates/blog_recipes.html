@@ -16,9 +16,9 @@
         <div class="col-md-6 col-lg-4">
             <div class="card mt-4">
                 {% if "placeholder" in recipe.image.url %}
-                    <img src="https://res.cloudinary.com/dz0w8vqzx/image/upload/v1680549064/dic72y83ygekeq6pcz1w.jpg" class="card-img-top" alt="Default Placeholder image">
+                    <img src="https://res.cloudinary.com/dz0w8vqzx/image/upload/v1680549064/dic72y83ygekeq6pcz1w.jpg" class="card-img-top img-responsive" alt="Default Placeholder image">
                 {% else %}
-                    <img src="{{ recipe.image.url }}" class="card-img-top" alt="Shows an image of a recipe added by a user">
+                    <img src="{{ recipe.image.url }}" class="card-img-top img-responsive" alt="Shows an image of a recipe added by a user">
                 {% endif %}
                 <div class="card-body text-center">
                     <h5 class="card-title">{{ recipe.title }}</h5>
