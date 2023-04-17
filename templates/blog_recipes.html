@@ -35,10 +35,10 @@
 {% if is_paginated %}
     <div class="pagination justify-content-center mt-4 mb-4">
         {% if page_obj.has_previous %}
-        <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-light me-2">&#8592; BACK</a>
+        <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-outline-dark me-2">&#8592; BACK</a>
         {% endif %}
         {% if page_obj.has_next %}
-        <a href="?page={{ page_obj.next_page_number }}" class="btn btn-light me-2">&#8594; NEXT</a>
+        <a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-dark me-2">&#8594; NEXT</a>
         {% endif %}
     </div>
 {% endif %}

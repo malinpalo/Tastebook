@@ -30,7 +30,8 @@ body {
 /* Index/Home Page */
 .home-back{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url('https://res.cloudinary.com/dz0w8vqzx/image/upload/v1681733864/pexels-photo-4033636_gtrsg0.jpg');
-    min-height: 75vh;
+    min-height: 85vh;
+    width: 100%;
     padding-bottom: 0.5rem;
     background-size: cover;
 }
