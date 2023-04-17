@@ -131,6 +131,7 @@ body {
 
 /* Comments section*/
 .recipe-comment-card {
+    padding-top: 1rem;
     max-width: 65%;
     margin: 0 auto;
 }
