@@ -4,6 +4,12 @@
 * {
     font-family: 'Merriweather', sans-serif;
 }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
 
 .logo {
     color: #cc5730;
@@ -222,6 +228,10 @@
 }
 
 /* Footer */
+footer {
+    margin-top: auto;
+  }
+
 .footer-base {
     width: 30vw;
 }

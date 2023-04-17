@@ -1,6 +1,8 @@
 from . import views
 from django.urls import path
 from .views import *
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
 
 
 urlpatterns = [
@@ -19,5 +21,7 @@ urlpatterns = [
         ),
     path('edit_comment/<comment_id>', views.edit_comment, name='edit_comment'),
     path('like/<slug:slug>', views.RecipeLike.as_view(), name='recipe_like'),
-
+    path(
+        'favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'
+        ))),
 ]
