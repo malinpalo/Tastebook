@@ -28,7 +28,7 @@ body {
 
 /* Index/Home Page */
 .home-back{
-    background-image: url('https://images.pexels.com/photos/4033636/pexels-photo-4033636.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url('https://images.pexels.com/photos/4033636/pexels-photo-4033636.jpeg?auto=compress&cs=tinysrgb&w=1600');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -199,7 +199,36 @@ body {
     border: none;
 }
 
+/* Login */
 
+.login-title {
+    background-color: #f1f2EC;
+}
+
+.login-title h1 {
+    color: #54671d;
+    padding-top: 2rem;
+    margin-top: 4rem;
+}
+
+.login-title p {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.login-title a {
+    color: #54671d;
+}
+
+.login-user input {
+    border: 1.5px solid #54671d;
+}
+
+.btn-blue{
+    background-color: #54671d;
+    color: #f1f2EC;
+}
 
 /* Footer */
 
@@ -227,5 +256,5 @@ footer {
 
 .social-media-icons i {
     font-size: 4vh;
-    color: #4299ac;
+    color: #54671d;
 }
