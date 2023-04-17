@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="text-center mt-5">
+        <h1>500 Error</h1>
+        <h2 class="mt-4">Server error.</h2>
+        <h3>Click <a href="{% url 'home' %}" class="error">Here</a> to return to the home page</h3>
+    </div>
+{% endblock %}
