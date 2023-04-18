@@ -145,10 +145,10 @@
           <p>Please, confirm that you want to delete {{ recipe.title }}</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
           <form action="{% url 'delete_recipe' recipe.id %}" method="POST">
             {% csrf_token %}
-            <button class="btn btn-danger" value="Confirm">Yes</button>
+            <button class="btn btn-danger" value="Confirm">YES</button>
           </form>
         </div>
       </div>
