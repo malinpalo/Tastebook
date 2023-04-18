@@ -21,7 +21,6 @@ urlpatterns = [
         ),
     path('edit_comment/<comment_id>', views.edit_comment, name='edit_comment'),
     path('like/<slug:slug>', views.RecipeLike.as_view(), name='recipe_like'),
-    path(
-        'favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'
-        ))),
+    path('favicon.ico', RedirectView.as_view(
+        url=staticfiles_storage.url('images/favicon.ico'))),
 ]
