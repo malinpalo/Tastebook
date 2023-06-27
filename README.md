@@ -41,7 +41,7 @@ Tastebook is a website built using the Django Full Stack framework for my Portfo
 ## UX Design:
 
 ### User Stories
-The user stories that where used can be found [here](https://github.com/malinpalo/Tastebook/issues) and are added below.
+The user stories that where used can be found [here](https://github.com/users/malinpalo/projects/9) and are added below.
 
 **Epic | Website Navigation**
 
@@ -52,10 +52,21 @@ The user stories that where used can be found [here](https://github.com/malinpal
 **Epic | Register / Sign in and out**
 
 ### Wireframes
-Wireframes that where created in Balsamiq for this project are displayed below. Please note that the wireframes might not be exactly a copy of the project due to the fact that the site has changed during development.
+Wireframes that where created in [Balsamiq]() for this project are displayed below. The wireframes were  created in the planning phase of the project. Please note that the wireframes might not be exactly a copy of the project due to the fact that the site has changed during development.
 
-![Wireframes](static/images/wireframes.png)
+![Wireframes](readme-docs/images/wireframes.png)
 
+### Agile Methodology
+
+### Typography
+
+### Colour Scheme
+
+![Colour](readme-docs/images/colours.png)
+
+### Database Diagram
+
+![ERD](readme-docs/images/diagram.png)
 
 ## Testing
 
