@@ -12,13 +12,27 @@
 
 ## Validator Testing
 
-### HTML
+### W3C HTML validator
+The site pages were run through the [W3C validator](https://validator.w3.org/) to check for any issues and HTML syntax errors. 
+Given the presence of Django template code in the HTML templates, the rendered HTML was copied from the Chrome browser by right clicking, selecting 'view page source' for each page of the site and then pasting directly into the HTML validator.
+No errors or warnings were to be found.
+
+![W3C HTML](readme-docs/images/w3c-html.png)
 
 ### CSS
+- The CSS stylesheet was put through the [W3C validator](https://jigsaw.w3.org/css-validator/)  to check for errors.
+- No errors were to be found.
+
+![W3C CSS](readme-docs/images/w3c-css.png)  
 
 ### JavaScript
+- The Javascript file was put through the [Jshint](https://jshint.com/) to check for errors. 
+- No errors were to be found.
+
+![JS Validator screenshot](readme-docs/images/jshint.png)
 
 ### Python
+
 
 ### Lighthouse
 
