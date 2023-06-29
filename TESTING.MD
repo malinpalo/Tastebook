@@ -6,7 +6,7 @@
     * [Python](#python)
     * [Lighthouse](#lighthouse)
 2. [User Story Testing](#user-story-testing)
-3. [Browser and Deivce Testing](#browser-and-device-testing)
+3. [Responsiveness Testing](#responsivness-testing)
 4. [Manual Testing](#manual-testing)
 5. [Bugs](#bugs)
 
@@ -122,7 +122,46 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 [Back to the top](#table-of-contents)
 
 
-## Browser and Device Testing
+## Responsiveness Testing
+
+The responsive design tests were carried out manually throughout the build using Google Chrome Dev Tools. As this is primarily a browser based platform I based the main design around a desktop view, adding responsive design for tablet and mobile devices as well. 
+
+During the testing process I also used the [Responsive Design Checker](https://www.responsivedesignchecker.com/) website to simulate the website on several other devices. Here are my findings:
+
+### Mobile Devices
+
+||<p>iPhone 6/6s/7</p><p>375 x 667</p>|<p>Samsung Galaxy S5/6/7</p><p>360 x 640</p>|<p>Google Pixel/Nexus 5</p><p>411 x 731</p>|
+| :- | :-: | :-: | :-: |
+|Render|Pass |Pass|Pass|
+|Images|Pass|Pass|Pass|
+|Links|Pass|Pass|Pass|
+
+### Tablet Devices
+
+||<p>Amazon Kindle Fire</p><p>768 x 1024</p>|<p>Samsung Galaxy Tab 10</p><p>800 x 1280</p>|<p>Apple iPad Pro</p><p>1366 x 1024</p><p></p>|
+| :- | :-: | :-: | :-: |
+|Render|Pass|Pass|Pass |
+|Images|Pass|Pass|Pass|
+|Links|Pass|Pass|Pass|
+
+### Desktop Devices
+
+||<p>24“ Desktop</p><p>1920 x 1200</p>|<p>19” Desktop</p><p>1440 x 900</p>|<p>10” Notebook</p><p>1024 x 600</p>|
+| :- | :-: | :-: | :-: |
+|Render|Pass|Pass|Pass|
+|Images|Pass|Pass|Pass|
+|Links|Pass|Pass|Pass|
+
+### Browser Compatibility 
+
+Happening was tested on the following browsers:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+
+Appearance and functionality appear to be consistent throughout all browsers. The site loads correctly on Firefox but it doesn't seem to be able to connect with the backend API and get the data. This is something I need to look at for the future to make sure that Firefox users can view my site properly.
+
 ---
 [Back to the top](#table-of-contents)
 
