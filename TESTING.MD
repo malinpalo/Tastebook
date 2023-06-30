@@ -7,6 +7,7 @@
     * [Lighthouse](#lighthouse)
 2. [User Story Testing](#user-story-testing)
 3. [Responsiveness Testing](#responsivness-testing)
+4. [Browser Compatibility](#browser-compatibility)
 4. [Manual Testing](#manual-testing)
 5. [Bugs](#bugs)
 
@@ -140,8 +141,8 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 
 #### View Recipes
 *As a User I can view the list of recipes so that I can choose one to read*
- - The user is able to click the recipes link in the nav bar and this will take them to the recipes page where they can view a list of recipes.
- - If they wish to view one recipe in full detail they can click Read More and they will then be able to see the recipe details. The user must be signed in to view the recipe details as if they are not signed in the Read More button will be disabled.
+- The user is able to click the recipes link in the nav bar and this will take them to the recipes page where they can view a list of recipes.
+- If they wish to view one recipe in full detail they can click Read More and they will then be able to see the recipe details. The user must be signed in to view the recipe details as if they are not signed in the Read More button will be disabled.
 
 #### Add A Recipe
 *As a User I can add a recipe so that other users can view it, like it and add comments to it.*
@@ -162,7 +163,6 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 #### Edit | delete A comment
 *As a User I can choose to edit/delete comments so that I can update my comments after posting them to the website*
 - The User is able to edit or delete any comment that they have created by clicking on the edit or delete button in the right hand side of that comment.
-
 
 
 ## Responsiveness Testing
@@ -207,3 +207,125 @@ Appearance and functionality appear to be consistent throughout all browsers.
 ---
 [Back to the top](#table-of-contents)
 
+## Manual Testing
+
+#### Navigation
+| Feature               | Test Performed                                                        | Result  |
+|-----------------------|-----------------------------------------------------------------------|---------|
+| Logo    | Clicking on the logo redirects the user to home page.                               | Pass    |
+| Home    | Clicking on Home link brings user to the home page.                                 | Pass    |
+| Recipes | Clicking on the recipes link, brings the user to the recipes page.                  | Pass    |
+| Register | When signed out clicking on the Register link, brings the user to the              |         |
+Registeration page.                                                                             | Pass    |
+| Login | When signed out, clicking on the Login link, brings the user to the login page.       | Pass    |
+| Logout | When signed in, clicking on the logout link, brings the user to the logout page.     | Pass    |
+| Correct links display | When a user is signed in or out the correct links display for both.   | Pass    |
+| Responsiveness | Checked to make sure it changes to burger menu on smaller devices.           | Pass    |
+
+#### Footer
+| Feature               | Test Performed                                                        | Result  |
+|-----------------------|-----------------------------------------------------------------------|---------|
+| External links | Clicking on social media links opens on a new page.                          | Pass    |
+| Displays correctly on all pages | Made sure it displays correctly on all pages.               | Pass    |
+| Responsiveness | Checked to make sure link icons display correctly on smaller devices.        | Pass    |
+
+#### Home
+| Feature               | Test Performed                                                        | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Background Image | Checked to make sure background image loads correctly.                  | Pass      |
+| About Us Section | Make sure section displays correctly on all device widths               | Pass      |
+
+#### Recipes
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Recipe cards   | Recipe cards displays as expected.                                        | Pass      |
+| Read more button | Signed In users can click the read more button under each recipe.       | Pass      |
+| Read more button | Signed Out users can't click the read more button under each recipe.    | Pass      |
+| Add recipe Button | An Add Recipe button is being displayed, when the user is signed in.   | Pass      |
+| 6 Recipes Per Page | Not more than 6 recipes per page is being displayed.                  | Pass      |
+| Next button | A next button at the bottom of the page is being displayed if there is more than six recipes.      | Pass      |
+| Back button | A back button at the bottom of the page is being displayed if the user is on the next recipe page. | Pass      |
+
+#### Recipe Details Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Recipe Content   | The recipe content displays as expected.                                | Pass      |
+| Edit Recipe   | If the user is the owner of the recipe they can click the edit button to edit their recipe. | Pass      |
+| Delete Recipe | If the user is the owner of the recipe they can click the delete button to delete their recipe. | Pass      |
+| Signed in user access | Only singed in users can access the recipe details page.           | Pass      |
+| Like button   | A clickable like button is being displayed below the recipe.               | Pass      |
+| Display total number of likes   | Displays the number of users that have liked the recipe. | Pass      |
+| Comment Section  | Displays comments added to the comment section.                         | Pass      |
+| Post Comment   | Allows users to post a comment and display it in the comment section.     | Pass      |
+
+#### Add A Recipe Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Display form  | Every input field is displaying.                                           | Pass      |
+| Submit filled out form  | A user can fill out the form and click the submit button at the bottom of the page. | Pass      |
+| Leave Image field blank on submission  | The place holder image displays after submitting if the user leaves the image field blank. | Pass      |
+| Leave Input fields blank | The form wont submit if the user leaves required input fields blank, warnings will be displayed for the user. | Pass      |
+| Submit Button | On click it will submit the recipe, and bring the user to the recipes page where the newly added recipe can be seen. | Pass      |
+| Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks Submit.  | Pass      |
+
+#### Update A Recipe Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Display form  | All the input fields displays with the orginal recipe.                                  | Pass      |
+| Update form  | When a user updates a recipe and clicks the submit button at the bottom of the page the recipe updates. | Pass      |
+| Update Button | On click it updates the recipe, and brings the user to the recipes page where the updated recipe can be seen. | Pass      |
+| Cancel Button | On click it brings the user back to the recipes list.                  | Pass      |
+| Success Message | A success message is displayed at the top of the screen when a user clicks update.  | Pass      |
+
+#### Delete A Recipe Modal
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Yes Button | When the user clicks the yes button the recipe will be deleted.                 | Pass      |
+| Cancel Button | When th user clicks the cancel button, the delete modal will disappear and the user will be back on the recipe page.     | Pass      |
+| Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will disappear.    | Pass      |
+| X  | When the user clicks on the X button at the top of the modal, the modal disappears.   | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal.  | Pass      |
+
+#### Register Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Sign In link | Under the "already have an account section", click Sign in to see if it brings you to the login page        | Pass      |
+| Submit Filled Out Form  | Fill out the form and click the Signup button to see if new account is created. | Pass      |
+| Leave Email Field Blank  | Fill out all the form except the optional email field and hit submit to see if new account is created.| Pass      |
+| Leave Username Field Blank| Fill out the form and leave Username field blank, to see if it give a warning and does not Sign Up.| Pass      |
+| Leave Password Field Blank| Fill out the form and leave Password field blank, to see if it give a warning and does not Sign Up.| Pass      |
+| Leave Password (again) Field Blank| Fill out the form and leave Password (again) field blank, to see if it give a warning and does not submit.| Pass      |
+| Signup with an taken username| Try to register an account that already has the taken username, and see if it fails and warns you that there is an account with that username. | Pass      |
+| Signup Button | On click check will it submit the user details and log them in if everything is filled out correctly. | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign Up. | Pass      |
+
+#### Login Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Sign Up link | Under the "if you do not have an account" section, click Sign up to see if it brings you to the Register page        | Pass      |
+| Leave Username Field Blank| Fill out Password Field and leave Username field blank, to see if it give a warning and does not Sign in.| Pass      |
+| Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
+| Sign In with unregistered account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
+| Change on letter in username or password | On click check will tell the user that the username or password is incorrect | Pass      |
+| Sign In Button | On click check will it log the user in if they have entered the right credentials and redirect them to the home page. | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign in. | Pass      |
+
+#### Logout Page
+| Feature               | Test Performed                                                     | Result    |
+|-----------------------|--------------------------------------------------------------------|-----------|
+| Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
+| Sign Out Button | When clicked it Signs out the user and redirect them to the login page.  | Pass      |
+| Success Message | Success message is displayed at the top of the screen after clicking Sign Out to let the user know they have logged out. | Pass      |
+
+
+---
+[Back to the top](#table-of-contents)

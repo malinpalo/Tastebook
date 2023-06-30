@@ -27,11 +27,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['tastebook.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-malinpalo-tastebook-m8m736b2q09.ws-eu101.gitpod.io']
 
 
 # Application definition
