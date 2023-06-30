@@ -243,9 +243,9 @@ Registeration page.                                                             
 | Recipe cards   | Recipe cards displays as expected.                                        | Pass      |
 | Read more button | Signed In users can click the read more button under each recipe.       | Pass      |
 | Read more button | Signed Out users can't click the read more button under each recipe.    | Pass      |
-| Add recipe Button | An Add Recipe button is being displayed, when the user is signed in.   | Pass      |
+| Add recipe Button | An Add Recipe button is being displayed when the user is signed in.   | Pass      |
 | 6 Recipes Per Page | Not more than 6 recipes per page is being displayed.                  | Pass      |
-| Next button | A next button at the bottom of the page is being displayed if there is more than six recipes.      | Pass      |
+| Next button | A next button at the bottom of the page is being displayed if there is more than six recipes being displayed.      | Pass      |
 | Back button | A back button at the bottom of the page is being displayed if the user is on the next recipe page. | Pass      |
 
 #### Recipe Details Page
@@ -265,9 +265,9 @@ Registeration page.                                                             
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
-| Display form  | Every input field is displaying.                                           | Pass      |
+| Display form  | Every input field is displaying on the add a crecipe form.                 | Pass      |
 | Submit filled out form  | A user can fill out the form and click the submit button at the bottom of the page. | Pass      |
-| Leave Image field blank on submission  | The place holder image displays after submitting if the user leaves the image field blank. | Pass      |
+| Leave Image field blank on submission  | If the user leaves the image field blank the place holder image displays after submitting. | Pass      |
 | Leave Input fields blank | The form wont submit if the user leaves required input fields blank, warnings will be displayed for the user. | Pass      |
 | Submit Button | On click it will submit the recipe, and bring the user to the recipes page where the newly added recipe can be seen. | Pass      |
 | Cancel Button | On click it will bring the user back to the recipes list.                  | Pass      |
@@ -288,7 +288,7 @@ Registeration page.                                                             
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
 | Yes Button | When the user clicks the yes button the recipe will be deleted.                 | Pass      |
-| Cancel Button | When th user clicks the cancel button, the delete modal will disappear and the user will be back on the recipe page.     | Pass      |
+| Cancel Button | When the user clicks the cancel button, the delete modal will disappear and the user will be back on the recipe page.     | Pass      |
 | Clicking Outside The Modal | When the user clicks anywhere ouside the modal the modal will disappear.    | Pass      |
 | X  | When the user clicks on the X button at the top of the modal, the modal disappears.   | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user clicks yes on the delete modal.  | Pass      |
@@ -297,27 +297,26 @@ Registeration page.                                                             
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
-| Sign In link | Under the "already have an account section", click Sign in to see if it brings you to the login page        | Pass      |
-| Submit Filled Out Form  | Fill out the form and click the Signup button to see if new account is created. | Pass      |
-| Leave Email Field Blank  | Fill out all the form except the optional email field and hit submit to see if new account is created.| Pass      |
-| Leave Username Field Blank| Fill out the form and leave Username field blank, to see if it give a warning and does not Sign Up.| Pass      |
-| Leave Password Field Blank| Fill out the form and leave Password field blank, to see if it give a warning and does not Sign Up.| Pass      |
-| Leave Password (again) Field Blank| Fill out the form and leave Password (again) field blank, to see if it give a warning and does not submit.| Pass      |
-| Signup with an taken username| Try to register an account that already has the taken username, and see if it fails and warns you that there is an account with that username. | Pass      |
-| Signup Button | On click check will it submit the user details and log them in if everything is filled out correctly. | Pass      |
+| Sign In link | Under the "already have an account section", the Sign in link redirects the user to the Login Page | Pass      |
+| Submit Filled Out Form  | When the user fills out the sign up form and clicks the Signup button a new account is created. | Pass      |
+| Leave Email Field Blank  | When the user fills out all the fields in the form except the optional email field and clicks submit a new account is created. | Pass      |
+| Leave Username Field Blank| When the user fills out the form and leaves Username field blank, a warning messages appeare saying that the field most not be left blank, Sign Up is not approved.| Pass      |
+| Leave Password Field Blank| When the user fills out the form and leaves Password field blank, a warning messages appeare saying that the field most not be left blank, Sign Up is not approved.| Pass      |
+| Leave Password (again) Field Blank| When the user fills out the form and leaves Password (again) field blank, a warning messages appeare saying that the field most not be left blank, Sign Up is not approved.| Pass      |
+| Signup with an already taken username| When the user register an account that already has the taken username, the sign upp fails and a warning messages appeare saying that a user with that username already exists. | Pass      |
+| Signup Button | On click the signup button will submit the user details, log them in and redirect them to the home page. | Pass      |
 | Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign Up. | Pass      |
 
 #### Login Page
 | Feature               | Test Performed                                                     | Result    |
 |-----------------------|--------------------------------------------------------------------|-----------|
 | Responsiveness | The page is responsive on several different devices, browsers and screen widths. | Pass      |
-| Sign Up link | Under the "if you do not have an account" section, click Sign up to see if it brings you to the Register page        | Pass      |
-| Leave Username Field Blank| Fill out Password Field and leave Username field blank, to see if it give a warning and does not Sign in.| Pass      |
-| Leave Password Field Blank| Fill out the Username field and leave Password field blank, to see if it give a warning and does not submit.| Pass      |
-| Sign In with unregistered account | Try to sign in with an account that is not registered, to see if it will fail. | Pass      |
-| Change on letter in username or password | On click check will tell the user that the username or password is incorrect | Pass      |
-| Sign In Button | On click check will it log the user in if they have entered the right credentials and redirect them to the home page. | Pass      |
-| Success Message | Success message is displayed at the top of the screen when a user enters the correct details and clicks Sign in. | Pass      |
+| Sign Up link | Under the "if you do not have an account" section, the Sign up link redirects the user to the Register Page        | Pass      |
+| Leave Username Field Blank| When the user fills out the form and leaves Username field blank, a warning messages appeare saying that the field most not be left blank, Sign In is not approved.| Pass      |
+| Leave Password Field Blank| When the user fills out the form and leaves Password field blank, a warning messages appeare saying that the field most not be left blank, Sign In is not approved.| Pass      |
+| Sign In with unregistered account | If a User tries to sign in with an account that is not registered, a warning messages appeare saying that 'the username and/or password you specified are not correct'. The sig in will not be approved. | Pass      |
+| Sign In Button | On click it will sign in the user if they have entered the right credentials. The user will get redirect to the home page. | Pass      |
+| Success Message | Success message is displayed at the top of the screen when a user enters the correct credentials and clicks Sign in. | Pass      |
 
 #### Logout Page
 | Feature               | Test Performed                                                     | Result    |
