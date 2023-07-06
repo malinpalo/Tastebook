@@ -117,11 +117,6 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 ---
 [Back to the top](#table-of-contents)
 
-
-## User Story Testing
----
-[Back to the top](#table-of-contents)
-
 ## User story testing
 
 ##### Navigation
@@ -133,9 +128,9 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
  - In the Navigation bar at the top of the page, if a User clicks on the Register link, they will be brought to the registeration page wehere they can sign up, once they sign up they will be able to access full functionality of the site.
  
 #### Signin | Signout
-*As a User I can Sign-in/ Sign-out so that I can access features when signed in and signed out so that no one can access my account.*
+*As a User I can Sign-in/Sign-out so that I can access all of the futures on the website when signed in and to maintain personal security by signing out*
  - When a User is not logged in the login link will be visible to the far right in the navigation bar, the same link will change to logut when the user is logged in.
- - When the User enters their login credentials they wil be able to access the full fuctionality of the site, when the user is logged out they will not have full access on the site and their account will be secure.
+ - When the User enters their login credentials they wil be able to access full fuctionality of the site. When the user is logged out they will not have full access on the site and their account will be secure.
 
 #### Homepage
 *As a User I can be welcomed by a homepage so that I can get a clear picture of what the website is all about and how to use it*
@@ -150,7 +145,7 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 *As a User I can add a recipe so that other users can view it, like it and add comments to it.*
 - When a user is signed in they are able to click on the Add Recipe button at the Recipes page, which will bring them to the Add Recipes page where they can upload their recipe.
 
-#### Edit | Delete A recipe
+#### Edit | Delete recipes
 *As a User I can Edit/Delete my recipes so that I can update my recipes after posting them to the website*
 - When viewing a recipe that the User has uploaded in the top right corner they have a choice to either delete or edit the recipe. A user can only edit or delete a recipe they are the owner for.
 
@@ -158,14 +153,16 @@ Lighthouse in chrome dev tools was used to generate a report that tests the site
 *As a User I can like/unlike recipes so that I can give other users feedback without writing a comment.*
 - On the recipe details there is a like button below the image, it is a Love heart that is empty outline when not liked and then is filled when liked, beside it displays the number of people that like the recipe. A User must be logged in to access this functionality.
 
-#### Add A Comment
-*As a User I can comment on my own and other recipes so that I can provide feedback to other users*
+#### Add comments
+*As a User I can comment on my own and other users recipes so that I can provide feedback to other users*
 - When a user is signed in and they are on the recipe details page for a particular recipe, at the bottom of the page there is a comment section where they can add a comment.
 
-#### Edit | delete A comment
+#### Edit | delete comments
 *As a User I can choose to edit/delete comments so that I can update my comments after posting them to the website*
 - The User is able to edit or delete any comment that they have created by clicking on the edit or delete button in the right hand side of that comment.
 
+---
+[Back to the top](#table-of-contents)
 
 ## Responsiveness Testing
 
