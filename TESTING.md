@@ -1,3 +1,7 @@
+# **Gro**
+
+# Frontend Testing
+
 ## Table Of Contents:
 1. [Validator Testing](#vadilidator-testing)
     * [Html](#html)
@@ -35,8 +39,6 @@ No errors or warnings were to be found.
 ### Python
 - Issues with the custom python code were fixed on an ongoing basis during development using the pycodestyle tool, which was installed to the IDE, GitPod.  
 - The code was also tested to check for errors using **Code Institutes pep8 online** website, [PEP8](https://pep8ci.herokuapp.com/). No errors returned as you can see from the screenshots below.
-
-#### Blog App
 
 <details>
     <summary>admin.py</summary>  

@@ -85,21 +85,7 @@ There was consideable uncertainty as to how many story point to allocate to each
 
 ## Testing
 
-### Lighthouse
-
-* This is the read from lighthouse:
-
-![image](static/images/testhomepage.png)
-
-
-### Validator testing
-
-* I tested it through the python validator and no errors were shown. Everything works perfectly. 
-*  All the code has been run through the W3C html validator, the W3C CSS validator and the JavaScript JSHint validator. The code passed the W3C Validator barring all the django template tags. No errors where found.
-
-* All code passed through the pep8-validator came out clean, looking like this:
-
-![Pep8-validator](static/images/pep8views.png)
+Please click [**_here_**](TESTING.md) to read more information about testing Gro.
 
 ## Technologies 
 
