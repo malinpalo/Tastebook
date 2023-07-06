@@ -15,7 +15,7 @@
     * [Colour Scheme](#colour-scheme)
     * [Database Diagram](#database-diagram)    
 3. [Features](#features)
-    * [Navigation](#Navigation-bar)
+    * [Navigation Bar](#navigation-bar)
     * [footer](#footer)
     * [Home Page](#home-page)
     * [Recipes Page](#recipes-page)
@@ -82,6 +82,72 @@ There was consideable uncertainty as to how many story point to allocate to each
 ### Database Diagram
 
 ![ERD](readme-docs/images/diagram.png)
+
+## Features:
+
+### Navigation Bar
+
+![NavBar](readme-docs/images/navbar-gro.png)
+
+Navigation bar on mobile and tablets
+![NavBar Burger](readme-docs/images/navbar-b-gro.png)
+![NavBar Burger Menu dropdown](readme-docs/images/navbar-bm-gro.png)
+
+### Footer
+
+![Footer](readme-docs/images/footer-gro.png)
+
+### Home Page
+
+![Homepage](readme-docs/images/homepage-gro.png)
+
+### Recipes Page
+
+Recipe page logged out users.
+
+![Recipes logged out users](readme-docs/images/recipes-logged-out-gro.png)
+
+Recipe page logged in users.
+
+![Recipes logged in users](readme-docs/images/recipes-logged-in-gro.png)
+
+### Recipe Details
+
+![Recipes details](readme-docs/images/recipe-details-gro.png)
+
+### Add Recipe Page
+
+![Recipes details](readme-docs/images/recipe-details1-gro.png)
+![Recipes details](readme-docs/images/recipe-details2-gro.png)
+![Recipes details](readme-docs/images/recipe-details3-gro.png)
+
+### Edit Recipe Page
+
+![Edit recipes](readme-docs/images/edit-recipe1-gro.png)
+![Edit recipes](readme-docs/images/edit-recipe2-gro.png)
+![Edit recipes](readme-docs/images/edit-recipe3-gro.png)
+
+### Delete Recipe Page
+
+![Delete recipes](readme-docs/images/delete-recipe-gro.png)
+
+### Edit Comment Page
+
+![Edit comment](readme-docs/images/edit-comment-gro.png)
+
+### Register Page
+
+![Register page](readme-docs/images/register-gro.png)
+
+### Login Page
+
+![Login Page](readme-docs/images/log-in-gro.png)
+
+### Logout Page
+
+![Logout page](readme-docs/images/log-out-gro.png)
+
+## Future Features
 
 ## Testing
 
