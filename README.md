@@ -55,7 +55,7 @@ Wireframes that where created in [Balsamiq](https://balsamiq.com/) for this proj
 ![Wireframes](readme-docs/images/wireframes.png)
 
 ### User Stories
-Users stories were implemented one by one after the firts planning phase. The wireframes created became the base for the User stories. 
+After the first planning phase user stories were implemented one by one. The wireframes created became the base for the User stories. 
 
 Individual user stories were categorised according to whether they had to be implemented to produce a Minimum Viable Product (MVP), with priority for development to be given to those that were part of the MVP specification. 
 
@@ -63,23 +63,27 @@ The user stories that where created can be found [here](https://github.com/users
 
 ### Agile Methodology
 GitHub issues, milestones and projects were used to document and track an agile development approach.
-An issue was created for each user story. These were labelled as 'MVP' if they were part of the MVP spec. All user stories were then added to a 'Product Backlog' milestone  [Link to product backlog]().
+An issue was created for each user story. These were labelled as 'MVP' if they were part of the MVP spec. All user stories were then added to a 'Product Backlog' milestone  [Link to product backlog](https://github.com/malinpalo/Tastebook/milestone/1).
 
-Development was divided into iterations with a timebox of four working days, each with a total value of 16 story points. The duration in calendar days was variable during development, due to fitting the four working days around work and other commitments. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have', 'could have' or 'should have' goals for the iteration, and assigned story point values. Story points for 'must have' user stories never exceeded 9 (60%).
+I set up a plan for development this plan was just to show how it could work in real life. Development was divided into iterations with a timebox of four working days, each with a total value of 16 story points. The duration in calendar days was variable during development, due to fitting the four working days around work and other commitments. A milestone and a GitHub project board (a Kanban board) were created for each iteration, and user stories moved from the Product Backlog and into iterations as each cycle of work began. They were labelled as 'must have', 'could have' or 'should have' goals for the iteration, and assigned story point values. Story points for 'must have' user stories never exceeded 9 (60%).
 
-A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. For example, the iteration 3 project board was captured near the start, mid-way through the iteration and at the end:
-
-![Kanban in progress]()
+A project Kanban board was used to track progress, with user stories moved between 'Todo', 'In Progress' and 'Done' columns as appropriate. 
+[Kanban in progress](https://github.com/users/malinpalo/projects/24).
 
 There was consideable uncertainty as to how many story point to allocate to each task. Therefor the first iteration had tasks exceeding 16 storie points in total. Tasks that didn't finish in time where to be moved in to the next iteration.
 
 ### Typography
 
-### Colour Scheme
+### Color Scheme
 
+This is the color scheme that I decided to work with. 
 ![Colour](readme-docs/images/colours.png)
 
+I used [Coolors](https://coolors.co/) to generate a color scheme from the default post image. I chose a natural background color with complimentary colors in green, blue and orange for text, buttons and icons to make the sites content stand out to be clear to the user.
+
 ### Database Diagram
+
+I created an entity relationship diagram using LucidCharts.
 
 ![ERD](readme-docs/images/diagram.png)
 
