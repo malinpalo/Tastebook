@@ -91,6 +91,13 @@ I created an entity relationship diagram using LucidCharts.
 
 ### Navigation Bar
 
+- The Navigation bar sits at the very top of each page, The logo is at the right hand side and the navigation links are on the left.
+- When logged in the **Login** becomes **Logout** and the **Registeration** link is removed.
+- The Navbar background is green with the Navigation links and logo in white colored text.
+- When the logo is clicked it redirects the user to the home page.
+- On large to xx-large screens the navigation bar is in the center of the page.
+- When on medium to small screens the navigation menu changes to burger menu which shows all the nav links when clicked on (second two screenshot below).
+
 ![NavBar](readme-docs/images/navbar-gro.png)
 
 Navigation bar on mobile and tablets
@@ -99,13 +106,23 @@ Navigation bar on mobile and tablets
 
 ### Footer
 
+- The footer is found at the bottom of every page and is responsive for small and large screens.
+- The footer displays icons for Facebook, Instagram and Twitter. These are all green in colour to match the sites colour scheme.
+- Above the icons there is a horizontal line that is centered.
+- When any of the icons are clicked the social media site opens on a seperate tab, this way the user still has the Tastebook website open so they can easily navigate back to it.
+
 ![Footer](readme-docs/images/footer-gro.png)
 
 ### Home Page
 
+- The home page has a background image of food on a table and has a light black linear gradiant to darken the image a bit and bring up the text color.
+- In the center there is a heading that says **Tastebook** in blue with a shaded orange background.
+- Below the heading there is a text box with information about the site, the text box has a blue border and white text which really makes the content stand out.
+
 ![Homepage](readme-docs/images/homepage-gro.png)
 
 ### Recipes Page
+
 
 Recipe page logged out users.
 
