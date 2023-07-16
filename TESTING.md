@@ -10,10 +10,10 @@
     * [Python](#python)
     * [Lighthouse](#lighthouse)
 2. [User Story Testing](#user-story-testing)
-3. [Responsiveness Testing](#responsivness-testing)
+3. [Responsiveness Testing](#responsiveness-testing)
 4. [Browser Compatibility](#browser-compatibility)
 4. [Manual Testing](#manual-testing)
-5. [Bugs](#bugs)
+5. [Known Bugs](#known-bugs)
 
 ## Validator Testing
 
@@ -327,3 +327,9 @@ Registeration page.                                                             
 
 ---
 [Back to the top](#table-of-contents)
+
+## Known Bugs
+
+[Back to the top](#table-of-contents)
+
+
