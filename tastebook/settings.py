@@ -31,7 +31,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-malinpalo-tastebook-m8m736b2q09.ws-eu101.gitpod.io']
+ALLOWED_HOSTS = ['tastebook.herokuapp.com', 'localhost']
 
 
 # Application definition
