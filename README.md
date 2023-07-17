@@ -2,7 +2,7 @@
 
 ![Am i responsive image](readme-docs/images/responsive.png)
 
-[Live Site](https://8000-malinpalo-tastebook-m8m736b2q09.ws-eu101.gitpod.io/) 
+[Live Site](https://tastebook.herokuapp.com/) 
 
 ## Table Of Contents:
 1. [Project Goals](#project-goals)
