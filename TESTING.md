@@ -4,8 +4,8 @@
 
 ## Table Of Contents:
 1. [Validator Testing](#vadilidator-testing)
-    * [Html](#html)
-    * [CSS](#css)
+    * [Html](#w3c-html-validator)
+    * [CSS](#w3c-css-validator)
     * [JavaScript](#javascript)
     * [Python](#python)
     * [Lighthouse](#lighthouse)
@@ -13,8 +13,9 @@
 3. [Responsiveness Testing](#responsiveness-testing)
 4. [Browser Compatibility](#browser-compatibility)
 5. [Manual Testing](#manual-testing)
-6. [Known Bugs](#known-bugs)
-7. [Fixed Bugs](#fixed-bugs)
+6. [Bugs](#bugs)
+    * [Known Bugs](#known-bugs)
+    * [Fixed Bugs](#fixed-bugs)
 
 ## Validator Testing
 
@@ -25,17 +26,26 @@ No errors or warnings were to be found.
 
 ![W3C HTML](readme-docs/images/w3c-html.png)
 
-### CSS
+[Back to the top](#table-of-contents)
+- - - 
+
+### W3C CSS validator
 - The CSS stylesheet was put through the [W3C validator](https://jigsaw.w3.org/css-validator/)  to check for errors.
 - No errors were to be found.
 
-![W3C CSS](readme-docs/images/w3c-css.png)  
+![W3C CSS](readme-docs/images/w3c-css.png) 
+
+[Back to the top](#table-of-contents)
+- - - 
 
 ### JavaScript
 - The Javascript file was put through the [Jshint](https://jshint.com/) to check for errors. 
 - No errors were to be found.
 
 ![JS Validator screenshot](readme-docs/images/jshint.png)
+
+[Back to the top](#table-of-contents)
+- - - 
 
 ### Python
 - Issues with the custom python code were fixed on an ongoing basis during development using the pycodestyle tool, which was installed to the IDE, GitPod.  
@@ -197,17 +207,20 @@ During the testing process I also used the [Responsive Design Checker](https://w
 
 ### Browser Compatibility 
 
-Happening was tested on the following browsers:
+Tastebook was tested on the following browsers:
 
 - Google Chrome
 - Microsoft Edge
 - Mozilla Firefox
 
 Appearance and functionality appear to be consistent throughout all browsers. 
+
 ---
 [Back to the top](#table-of-contents)
 
 ## Manual Testing
+
+* The admin can delete/edit all posts from different users.
 
 #### Navigation
 | Feature               | Test Performed                                                        | Result  |
@@ -329,13 +342,15 @@ Registeration page.                                                             
 ---
 [Back to the top](#table-of-contents)
 
-## Known Bugs
+## Bugs
+
+### Known Bugs
 - When working with my readme I realized the date for when a comment was created didn't show when editing the comment. Due to time restrictions I didn't have time to fix this bug so I'll have to leave it for later.
 
 ---
 [Back to the top](#table-of-contents)
 
-## Fixed Bugs
+### Fixed Bugs
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long**. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
 - During build up I couldn't get the pagination of the recipes in the recipes page to work. The error was solved by cleaning up an typo in the code.
 - I encountered an bug while building the "add recipe page" where as the user couldn't add a recipe. The bug was fixed by removing a broken url pattern.

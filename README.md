@@ -12,7 +12,7 @@
     * [Wireframes](#wireframes)
     * [Agile Methodology](#agile-methodology)
     * [Typography](#typography)
-    * [Colour Scheme](#colour-scheme)
+    * [Color Scheme](#color-scheme)
     * [Database Diagram](#database-diagram)    
 3. [Features](#features)
     * [Navigation Bar](#navigation-bar)
@@ -309,6 +309,7 @@ Please click [**_here_**](TESTING.md) to read more information about testing Tas
 * [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used for responsiveness check across devices.
 * [Am I responsive](https://ui.dev/amiresponsive) - Used for responsiveness check across devices.
 * [Favicon](https://favicon.io/) - Used to create the favicon.
+* [Fontawesome](https://fontawesome.com/) - Used to for the icons.
 * [Google Fonts](https://fonts.google.com/about) - for the font of the text
 * [Balsamiq](https://en.wikipedia.org/wiki/Balsamiq) - was used to create the wireframes.
 * [LucidChart](https://www.lucidchart.com/pages/) - was used to design the database schema.
