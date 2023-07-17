@@ -16,21 +16,21 @@
     * [Database Diagram](#database-diagram)    
 3. [Features](#features)
     * [Navigation Bar](#navigation-bar)
-    * [footer](#footer)
+    * [Footer](#footer)
     * [Home Page](#home-page)
     * [Recipes Page](#recipes-page)
     * [Recipe Details](#recipe-details)
     * [Add Recipe Page](#add-recipe-page)
     * [Edit Recipe Page](#edit-recipe-page)
-    * [Delete Recipe Page](#delete-recipe)
+    * [Delete Recipe Page](#delete-recipe-page)
     * [Edit Comment Page](#edit-comment-page)
     * [Register Page](#register-page)
     * [Login Page](#login-page)
     * [Logout Page](#logout-page)
 
 4. [Future Features](#future-features)
-5. [Technologies Used](#technologies-used)
-6. [Testing](#testing)
+5. [Testing](#testing)
+6. [Technologies Used](#technologies-used)
 7. [Deployment](#deployment)
 8. [Credits](#credits)
 9. [Acknowledgements](#acknowledgements)
@@ -58,12 +58,16 @@ Wireframes that where created in [Balsamiq](https://balsamiq.com/) for this proj
 
 ![Wireframes](readme-docs/images/wireframes.png)
 
+[Back to top](<#table-of-contents>)
+
 ### User Stories
 After the first planning phase user stories were implemented one by one. The wireframes created became the base for the User stories. 
 
 Individual user stories were categorised according to whether they had to be implemented to produce a Minimum Viable Product (MVP), with priority for development to be given to those that were part of the MVP specification. 
 
 The user stories that where created can be found [here](https://github.com/users/malinpalo/projects/9).
+
+[Back to top](<#table-of-contents>)
 
 ### Agile Methodology
 GitHub issues, milestones and projects were used to document and track an agile development approach.
@@ -76,11 +80,15 @@ A project Kanban board was used to track progress, with user stories moved betwe
 
 There was consideable uncertainty as to how many story point to allocate to each task. Therefor the first iteration had tasks exceeding 16 storie points in total. Tasks that didn't finish in time where to be moved in to the next iteration.
 
+[Back to top](<#table-of-contents>)
+
 ### Typography
 
 - The font that was used for the logo and the heading on the homepage was **Delicious Handrawn**
 - **Merriweather** font was used for the body.
 - **Sanserif** was used as a fallback for the other fonts just in case they wouldn't load.
+
+[Back to top](<#table-of-contents>)
 
 ### Color Scheme
 
@@ -88,6 +96,8 @@ This is the color scheme that I decided to work with.
 ![Colour](readme-docs/images/colours.png)
 
 I used [Coolors](https://coolors.co/) to generate a color scheme from the default post image. I chose a natural background color with complimentary colors in green, blue and orange for text, buttons and icons to make the sites content stand out to be clear to the user.
+
+[Back to top](<#table-of-contents>)
 
 ### Database Diagram
 
@@ -101,7 +111,7 @@ I created an entity relationship diagram using LucidCharts.
 
 ### Navigation Bar
 
-- The Navigation bar sits at the very top of each page, The logo is at the right hand side and the navigation links are on the left.
+- The Navigation bar sits at the very top of each page, the logo is at the right hand side and the navigation links are on the left.
 - When logged in the **Login** becomes **Logout** and the **Registeration** link is removed.
 - The Navbar background is green with the Navigation links and logo in white colored text.
 - When the logo is clicked it redirects the user to the home page.
@@ -114,6 +124,8 @@ Navigation bar on mobile and tablets
 ![NavBar Burger](readme-docs/images/navbar-b-gro.png)
 ![NavBar Burger Menu dropdown](readme-docs/images/navbar-bm-gro.png)
 
+[Back to top](<#table-of-contents>)
+
 ### Footer
 
 - The footer is found at the bottom of every page and is responsive for small and large screens.
@@ -123,6 +135,8 @@ Navigation bar on mobile and tablets
 
 ![Footer](readme-docs/images/footer-gro.png)
 
+[Back to top](<#table-of-contents>)
+
 ### Home Page
 
 - The home page has a background image of food on a table with a blank menu paper in white and has a light black linear gradiant to darken the image a bit and bring up the text color.
@@ -130,6 +144,8 @@ Navigation bar on mobile and tablets
 - Below the heading there is a text box with information about the site, the text box has a blue border and white text which really makes the content stand out.
 
 ![Homepage](readme-docs/images/homepage-gro.png)
+
+[Back to top](<#table-of-contents>)
 
 ### Recipes Page
 
@@ -153,6 +169,8 @@ Next and Bback buttons
 ![Next button](readme-docs/images/next-tb.png)
 ![Back button](readme-docs/images/back-tb.png)
 
+[Back to top](<#table-of-contents>)
+
 ### Recipe Details
 
 - At the top of the of the recipe details page in the center is the photo of the recipe.
@@ -167,17 +185,21 @@ Next and Bback buttons
 ![Recipes details](readme-docs/images/recipe-details2-gro.png)
 ![Recipes details](readme-docs/images/recipe-details3-gro.png)
 
+[Back to top](<#table-of-contents>)
+
 ### Add Recipe Page
 
-- When a user clicks the **Add Recipe** button on the **The Recipes** page they are taken to the **Add Recipe page** where they are greeted with a form to enter their recipe.
+- When a user clicks the **Add Recipe** button in the **The Recipes** page they are taken to the **Add Recipe page** where they are greeted with a form to enter their recipe.
 - At the top there is a heading that says **Here you can add your recipe** with the form fields beneath it. I kept the form big and simple, so that it is easy for the user to use.
 - For the **Recipe description**, **Recipe Ingredients** and **How to** fields the summernote widget is used so that a user can easily format their text, and style it whatever way they wish.
-- Below this is a green **Submit** button. Once the button is clicked the recipe will be submitted and the user returned to the recipe page where they will see their recipe as the first one in the list.
+- Below this is a green **Submit** button. Once the button is clicked the recipe will be submitted and the user is redirected to the recipe page where they will see their recipe as the first one in the list.
 - Beside the **Submit** button there is a yellow **Cancel** button. Once the button is clicked it will redirect the user back to the recipe page.
 
 ![Add recipe page](readme-docs/images/add-recipe-page-1-tb.png)
 ![Add recipe page](readme-docs/images/add-recipe-page-2-tb.png)
 ![Add recipe page](readme-docs/images/add-recipe-page-3-tb.png)
+
+[Back to top](<#table-of-contents>)
 
 ### Edit Recipe Page
 
@@ -186,9 +208,17 @@ Next and Bback buttons
 - After editing the Recipe a success message will be displayed at the top of the screen.
 - Please note that only the user who created the recipe can edit it from here.
 
+Edit recipes pencil icon in the recipe details page.
+
+![Edit recipes pencil](readme-docs/images/edit-recipe-pencil-tb.png)
+
+Edit recipe page.
+
 ![Edit recipes](readme-docs/images/edit-recipe1-gro.png)
 ![Edit recipes](readme-docs/images/edit-recipe2-gro.png)
 ![Edit recipes](readme-docs/images/edit-recipe3-gro.png)
+
+[Back to top](<#table-of-contents>)
 
 ### Delete Recipe Page
 
@@ -200,6 +230,8 @@ Next and Bback buttons
 - After deleting the Recipe a success message will be displayed at the top of the screen.
 
 ![Delete recipes](readme-docs/images/delete-recipe-gro.png)
+
+[Back to top](<#table-of-contents>)
 
 ### Edit Comment Page
 
@@ -213,15 +245,19 @@ Next and Bback buttons
 
 ![Edit comment](readme-docs/images/edit-comment-gro.png)
 
+[Back to top](<#table-of-contents>)
+
 ### Register Page
 
 - The **Register** page has grey banner running accross the page. In the center of the Banner is a green heading saying **SIGN UP**.
 Beneath the heading there is a text saying **Already have an account? Then please Sign In**. "Sign In" is a clickable link that the redirects the user to the Sign In page.
-- Beneath this is a centered form so that the user can enter a **Username**, a **Email** which is optional and then enter the **Password** which they will have to confirm by entering it again.
+- Beneath this is a centered form where the user can enter a **Username**, a **Email** which is optional and then enter the **Password** which they will have to confirm by entering it again.
 - At the bottom of the form there is a green **SIGN UP** button.
 - When the user fills out the form and clicks the **SIGN UP** button they will be logged in and redirected to the home page.
 
 ![Register page](readme-docs/images/register-gro.png)
+
+[Back to top](<#table-of-contents>)
 
 ### Login Page
 
@@ -230,10 +266,12 @@ Beneath the heading there is a text saying **Already have an account? Then pleas
 
 ![Login Page](readme-docs/images/log-in-gro.png)
 
+[Back to top](<#table-of-contents>)
+
 ### Logout Page
 
 
-- The **logout** page follows the same style as the regiser and login pages with a grey banner accross the screen. It has a green heading that says **SIGN OUT**. Beneath the heading there is a text asking the user **Are you sure you want to sign-out?**. Below this is a green **SIGN OUT** button. Once clicked the button signs the user out and redirects them to the **SIGN IN** page.
+- The **logout** page follows the same style as the regiser and login pages with a grey banner accross the screen. It has a green heading that says **SIGN OUT**. Beneath the heading there is a text asking the user:  **Are you sure you want to sign-out?**. Below this there is a green **SIGN OUT** button. Once clicked the button signs the user out and redirects them to the **SIGN IN** page.
 
 ![Logout page](readme-docs/images/log-out-gro.png)
 
@@ -241,7 +279,7 @@ Beneath the heading there is a text saying **Already have an account? Then pleas
 
 ## Future Features
 
-- I would like to enable for users to create a profile section where they can add an photo and information about theme selves.  
+- I would like to enable for users to create a profile section where they can add an photo and information about them selves.  
 
 [Back to top](<#table-of-contents>)
 
@@ -251,7 +289,7 @@ Please click [**_here_**](TESTING.md) to read more information about testing Tas
 
 [Back to top](<#table-of-contents>)
 
-## Technologies 
+## Technologies Used
 
 * [GitHub](https://github.com/) - to host the repositories.
 * [Gitpod](https://www.gitpod.io/) - as the IDE for the application.

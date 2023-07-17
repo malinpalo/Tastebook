@@ -1,4 +1,4 @@
-# **Gro**
+# **Tastebook**
 
 # Frontend Testing
 
@@ -12,8 +12,9 @@
 2. [User Story Testing](#user-story-testing)
 3. [Responsiveness Testing](#responsiveness-testing)
 4. [Browser Compatibility](#browser-compatibility)
-4. [Manual Testing](#manual-testing)
-5. [Fixed Bugs](#fixed-bugs)
+5. [Manual Testing](#manual-testing)
+6. [Known Bugs](#known-bugs)
+7. [Fixed Bugs](#fixed-bugs)
 
 ## Validator Testing
 
@@ -328,12 +329,18 @@ Registeration page.                                                             
 ---
 [Back to the top](#table-of-contents)
 
+## Known Bugs
+- When working with my readme I realized the date for when a comment was created didn't show when editing the comment. Due to time restrictions I didn't have time to fix this bug so I'll have to leave it for later.
+
+---
+[Back to the top](#table-of-contents)
+
 ## Fixed Bugs
 - After creating the project I was getting alot of PEP8 errors, most of which were for **lines too long**. To fix this and conform to PEP8 standards I broke the lines up and made sure they did not go past 79 characters.
-- 
 - During build up I couldn't get the pagination of the recipes in the recipes page to work. The error was solved by cleaning up an typo in the code.
 - I encountered an bug while building the "add recipe page" where as the user couldn't add a recipe. The bug was fixed by removing a broken url pattern.
 
+---
 [Back to the top](#table-of-contents)
 
 
